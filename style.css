@@ -7,18 +7,18 @@
 
 body {
   font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  color: #222;
+  background: linear-gradient(135deg, #232946 0%, #121629 100%);
+  color: #eaeaea;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 header {
-  background: #22223b;
-  color: #fff;
+  background: linear-gradient(90deg, #232946 60%, #393e6b 100%);
+  color: #fffbe7;
   padding: 2rem 0 1.5rem 0;
-  box-shadow: 0 2px 8px rgba(34,34,59,0.08);
+  box-shadow: 0 2px 16px rgba(35,41,70,0.18);
 }
 
 header .container {
@@ -31,20 +31,22 @@ header .container {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 4px solid #4a4e69;
+  border: 4px solid #eeb85a;
   margin-bottom: 1rem;
-  box-shadow: 0 4px 16px rgba(34,34,59,0.15);
+  box-shadow: 0 4px 24px rgba(238,184,90,0.15);
+  background: #fffbe7;
 }
 
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
+  color: #eeb85a;
 }
 
 header p {
   font-size: 1.2rem;
-  color: #c9ada7;
+  color: #b8c1ec;
 }
 
 main {
@@ -61,8 +63,9 @@ main {
 .repos h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #22223b;
+  color: #eeb85a;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .repo-grid {
@@ -72,18 +75,19 @@ main {
 }
 
 .repo-card {
-  background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 4px 24px rgba(34,34,59,0.10);
+  background: linear-gradient(135deg, #393e6b 60%, #232946 100%);
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 32px rgba(35,41,70,0.18);
   padding: 2rem 1.5rem;
   text-decoration: none;
-  color: #22223b;
+  color: #fffbe7;
   transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
   overflow: hidden;
+  border: 1.5px solid #eeb85a22;
 }
 
 .repo-card::before {
@@ -91,10 +95,10 @@ main {
   position: absolute;
   top: -40px;
   right: -40px;
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, #4a4e69 0%, #9a8c98 100%);
-  opacity: 0.08;
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle, #eeb85a 0%, #23294600 80%);
+  opacity: 0.13;
   border-radius: 50%;
   z-index: 0;
 }
@@ -103,28 +107,38 @@ main {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   z-index: 1;
+  color: #eeb85a;
 }
 
 .repo-card p {
   font-size: 1rem;
-  color: #4a4e69;
+  color: #b8c1ec;
   z-index: 1;
 }
 
 .repo-card:hover, .repo-card:focus {
   transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 8px 32px rgba(34,34,59,0.18);
-  background: #f2e9e4;
+  box-shadow: 0 12px 40px rgba(238,184,90,0.18);
+  background: linear-gradient(135deg, #eeb85a 0%, #393e6b 100%);
+  color: #232946;
+}
+
+.repo-card:hover h3, .repo-card:focus h3 {
+  color: #232946;
+}
+
+.repo-card:hover p, .repo-card:focus p {
+  color: #232946;
 }
 
 footer {
-  background: #22223b;
-  color: #fff;
+  background: #232946;
+  color: #b8c1ec;
   text-align: center;
   padding: 1rem 0;
   font-size: 1rem;
   letter-spacing: 0.5px;
-  box-shadow: 0 -2px 8px rgba(34,34,59,0.08);
+  box-shadow: 0 -2px 8px rgba(35,41,70,0.08);
 }
 
 @media (max-width: 600px) {
