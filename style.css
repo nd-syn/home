@@ -7,7 +7,10 @@
 
 body {
   font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-  background: linear-gradient(135deg, #f8fafc 0%, #e0f7fa 100%);
+  background: linear-gradient(120deg, #f8fafc 0%, #e0f7fa 40%, #ffe5d9 100%),
+              repeating-radial-gradient(circle at 80% 20%, #ffecd2 0px, #ffecd2 10px, transparent 11px, transparent 40px),
+              repeating-radial-gradient(circle at 20% 80%, #b2dfdb 0px, #b2dfdb 8px, transparent 9px, transparent 30px);
+  background-blend-mode: lighten, normal;
   color: #1a2636;
   min-height: 100vh;
   display: flex;
